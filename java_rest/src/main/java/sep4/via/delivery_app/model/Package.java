@@ -31,4 +31,8 @@ public class Package {
     @ManyToOne
     @JoinColumn(name = "receiver_address_id")
     private Address receiverAddress;
+
+    @ManyToOne
+    @JoinColumn(name = "status_id")
+    private PackageStatus status;
 }
