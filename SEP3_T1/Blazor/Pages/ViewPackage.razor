@@ -1,0 +1,81 @@
+@page "/ViewPackagePage"
+@using Client.ClientInterfaces
+@using Domain.Models
+@inject IPackageService packageService;
+
+<PageTitle>See package information</PageTitle>
+
+<h1>Package information</h1>
+
+<p>Please insert a package number</p>
+<div class="mb-3">
+    <label for="packageNumber" class="form-label">Package number</label>
+    <input type="text" class="form-control" id="packageNumber" @bind="packageNumber">
+</div>
+@if (errorLabel!="")
+    {
+        <div class="field">
+            <label style="color: red">
+                @errorLabel
+            </label>
+        </div>
+    }
+     <button type="submit" @onclick="ShowPackageInfo" class="btn btn-primary">Submit</button>
+@if (packageInfoValid)
+{
+    <table class="table mt-5">
+        <tbody>
+        <tr>
+            <th scope="row">Receiver</th>
+            <td>@package.ReceiverAddress.City</td>
+        </tr>
+        <tr>
+            <th scope="row">Sender</th>
+            <td>@package.Sender.Name</td>
+        </tr>
+        <tr>
+            <th scope="row">Location</th>
+            <td>@package.LastKnownLocation.City</td>
+           
+        </tr>
+        <tr>
+            <th scope="row">Status</th>
+            <td>@package.Weight</td>
+            
+        </tr>
+        <tr>
+            <th scope="row">Final destination</th>
+            <td>@package.ReceiverAddress.City</td>
+           
+        </tr>
+        </tbody>
+    </table>
+}
+
+
+
+@code {
+    private string packageNumber;
+    private string errorLabel = "";
+    bool packageInfoValid;
+    private Package package;
+    
+    private  async Task ShowPackageInfo()
+    {
+        
+       try
+        {
+            //get the package from the server
+           long packageNumberLong= long.Parse(packageNumber);
+           package = await packageService.GetPackageByIdAsync(packageNumberLong);
+            packageInfoValid = true;
+            
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            //errorLabel = "g";
+            errorLabel = $"Error: {e.Message}";
+        }
+    }
+} 
