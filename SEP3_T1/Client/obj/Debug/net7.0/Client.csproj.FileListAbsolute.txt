@@ -1,0 +1,15 @@
+C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Client\bin\Debug\net7.0\Client.deps.json
+C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Client\bin\Debug\net7.0\Client.dll
+C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Client\bin\Debug\net7.0\Client.pdb
+C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Client\bin\Debug\net7.0\Domain.dll
+C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Client\bin\Debug\net7.0\Domain.pdb
+C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\Client.csproj.AssemblyReference.cache
+C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\Client.AssemblyInfoInputs.cache
+C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\Client.AssemblyInfo.cs
+C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\Client.csproj.CoreCompileInputs.cache
+C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\Client.csproj.CopyComplete
+C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\Client.dll
+C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\refint\Client.dll
+C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\Client.pdb
+C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\ref\Client.dll
