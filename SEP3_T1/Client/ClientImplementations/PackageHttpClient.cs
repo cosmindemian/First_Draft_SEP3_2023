@@ -16,18 +16,21 @@ public class PackageHttpClient :IPackageService
     }
     public async Task<Package> GetPackageByIdAsync(long id)
     {
-        HttpResponseMessage response = await client.GetAsync($"/packages/{id}");
+        HttpResponseMessage response = await client.GetAsync($"/package/{id}");
         string content = await response.Content.ReadAsStringAsync();
         if (!response.IsSuccessStatusCode)
         {
             throw new Exception(content);
         }
-
+        Console.WriteLine(content);
         //use var (packageDTO)
         var packageDTO = JsonSerializer.Deserialize<PackageGetDTO>(content, new JsonSerializerOptions
         {
-            PropertyNameCaseInsensitive = true
+            PropertyNameCaseInsensitive = true,
+            IncludeFields = true
+            
         })!;
+        
         Customer sender = new Customer(packageDTO.SenderName);
         Address receiverAddress = new Address(packageDTO.ReceiverAddress.Street, packageDTO.ReceiverAddress.Number,
             packageDTO.ReceiverAddress.City);

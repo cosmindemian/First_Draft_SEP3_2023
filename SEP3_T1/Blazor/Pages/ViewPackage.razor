@@ -26,7 +26,7 @@
     <table class="table mt-5">
         <tbody>
         <tr>
-            <th scope="row">Receiver</th>
+            <th scope="row">Receiver city</th>
             <td>@package.ReceiverAddress.City</td>
         </tr>
         <tr>
@@ -39,7 +39,7 @@
            
         </tr>
         <tr>
-            <th scope="row">Status</th>
+            <th scope="row">Weight</th>
             <td>@package.Weight</td>
             
         </tr>
@@ -69,13 +69,12 @@
            long packageNumberLong= long.Parse(packageNumber);
            package = await packageService.GetPackageByIdAsync(packageNumberLong);
             packageInfoValid = true;
+            errorLabel = "";
             
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
             //errorLabel = "g";
-            errorLabel = $"Error: {e.Message}";
-        }
+            errorLabel = "There is no package with the id";}
     }
 } 
