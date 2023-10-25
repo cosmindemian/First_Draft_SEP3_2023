@@ -21,12 +21,16 @@ public class Package {
     private Customer sender;
 
     @ManyToOne
+    @JoinColumn(name = "receiver_id")
+    private Customer receiver;
+
+    @ManyToOne
     @JoinColumn(name = "sender_address_id")
     private Address senderAddress;
 
     @ManyToOne
     @JoinColumn(name = "last_known_address_id")
-    private Address lastKnownLocation;
+    private Address lastKnownAddress;
 
     @ManyToOne
     @JoinColumn(name = "receiver_address_id")

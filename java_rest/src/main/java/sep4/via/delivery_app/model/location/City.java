@@ -15,6 +15,7 @@ public class City
   @GeneratedValue
   private Long id;
   private String name;
+  private String zipCode;
 
   @OneToMany(mappedBy = "city")
   private Set<Address> addresses;
