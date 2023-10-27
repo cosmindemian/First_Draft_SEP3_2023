@@ -1,2 +1,0 @@
-obj\Debug\net7.0\Protos/Grpc.cs \
-obj\Debug\net7.0\Protos/GrpcGrpc.cs: Protos/grpc.proto
