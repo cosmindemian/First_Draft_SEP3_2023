@@ -78,3 +78,43 @@ C:\Users\START\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\scopedcss\bundle
 C:\Users\START\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\ProofOfConcept.csproj.CopyComplete
 C:\Users\START\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\ProofOfConcept.genruntimeconfig.cache
 C:\Users\START\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\ref\ProofOfConcept.dll
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\bin\Debug\net7.0\appsettings.Development.json
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\bin\Debug\net7.0\appsettings.json
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\bin\Debug\net7.0\ProofOfConcept.exe
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\bin\Debug\net7.0\ProofOfConcept.deps.json
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\bin\Debug\net7.0\ProofOfConcept.runtimeconfig.json
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\bin\Debug\net7.0\ProofOfConcept.dll
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\bin\Debug\net7.0\ProofOfConcept.pdb
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\bin\Debug\net7.0\Google.Protobuf.dll
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\bin\Debug\net7.0\Grpc.AspNetCore.Server.dll
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\bin\Debug\net7.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\bin\Debug\net7.0\Grpc.Core.Api.dll
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\bin\Debug\net7.0\Grpc.Net.Client.dll
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\bin\Debug\net7.0\Grpc.Net.ClientFactory.dll
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\bin\Debug\net7.0\Grpc.Net.Common.dll
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\ProofOfConcept.csproj.AssemblyReference.cache
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\ProofOfConcept.GeneratedMSBuildEditorConfig.editorconfig
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\ProofOfConcept.AssemblyInfoInputs.cache
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\ProofOfConcept.AssemblyInfo.cs
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\ProofOfConcept.csproj.CoreCompileInputs.cache
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\ProofOfConcept.MvcApplicationPartsAssemblyInfo.cs
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\ProofOfConcept.MvcApplicationPartsAssemblyInfo.cache
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\staticwebassets\msbuild.ProofOfConcept.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\staticwebassets\msbuild.build.ProofOfConcept.props
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.ProofOfConcept.props
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.ProofOfConcept.props
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\staticwebassets.build.json
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\staticwebassets.development.json
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\scopedcss\bundle\ProofOfConcept.styles.css
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\ProofOfConcept.csproj.CopyComplete
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\ProofOfConcept.dll
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\refint\ProofOfConcept.dll
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\ProofOfConcept.pdb
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\ProofOfConcept.genruntimeconfig.cache
+C:\Java projects\VIA\SEP3_2023\SEP_T2\ProofOfConcept\obj\Debug\net7.0\ref\ProofOfConcept.dll

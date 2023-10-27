@@ -14,7 +14,7 @@ builder.Services.AddScoped<IPackageService, PackageHttpClient>();
 builder.Services.AddScoped(
     sp => 
         new HttpClient { 
-            BaseAddress = new Uri("http://localhost:8080")  
+            BaseAddress = new Uri("http://localhost:5140")  
         }
 );
 

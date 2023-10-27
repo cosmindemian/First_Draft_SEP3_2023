@@ -16,10 +16,12 @@ public class PackageController : ControllerBase
 
     }
     
+    [Route("/package/{id}")]
     [HttpGet]
-    public async Task<ActionResult<string>> getPackage()
+    public async Task<ActionResult<string>> getPackage(long id)
     {
-        return StatusCode(200, await _packageService.getPackage(1));
+        Console.Write("I am here");
+        return StatusCode(200, await _packageService.getPackage(id));
         
     }
 }

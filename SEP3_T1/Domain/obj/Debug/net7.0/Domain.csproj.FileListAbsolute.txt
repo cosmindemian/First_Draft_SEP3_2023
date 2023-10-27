@@ -9,3 +9,14 @@ C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Domain\obj\Debug\net7.0\Domain.dl
 C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Domain\obj\Debug\net7.0\refint\Domain.dll
 C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Domain\obj\Debug\net7.0\Domain.pdb
 C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Domain\obj\Debug\net7.0\ref\Domain.dll
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Domain\bin\Debug\net7.0\Domain.deps.json
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Domain\bin\Debug\net7.0\Domain.dll
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Domain\bin\Debug\net7.0\Domain.pdb
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Domain\obj\Debug\net7.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Domain\obj\Debug\net7.0\Domain.AssemblyInfoInputs.cache
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Domain\obj\Debug\net7.0\Domain.AssemblyInfo.cs
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Domain\obj\Debug\net7.0\Domain.csproj.CoreCompileInputs.cache
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Domain\obj\Debug\net7.0\Domain.dll
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Domain\obj\Debug\net7.0\refint\Domain.dll
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Domain\obj\Debug\net7.0\Domain.pdb
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Domain\obj\Debug\net7.0\ref\Domain.dll

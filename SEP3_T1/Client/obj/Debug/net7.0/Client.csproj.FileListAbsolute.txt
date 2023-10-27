@@ -13,3 +13,18 @@ C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\Client.dl
 C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\refint\Client.dll
 C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\Client.pdb
 C:\Users\START\RiderProjects\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\ref\Client.dll
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Client\bin\Debug\net7.0\Client.deps.json
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Client\bin\Debug\net7.0\Client.dll
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Client\bin\Debug\net7.0\Client.pdb
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Client\bin\Debug\net7.0\Domain.dll
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Client\bin\Debug\net7.0\Domain.pdb
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\Client.csproj.AssemblyReference.cache
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\Client.AssemblyInfoInputs.cache
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\Client.AssemblyInfo.cs
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\Client.csproj.CoreCompileInputs.cache
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\Client.csproj.CopyComplete
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\Client.dll
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\refint\Client.dll
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\Client.pdb
+C:\Java projects\VIA\SEP3_2023\SEP3_T1\Client\obj\Debug\net7.0\ref\Client.dll
