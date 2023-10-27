@@ -1,6 +1,6 @@
-package sep4.via.delivery_app.grpc.packet;
+package sep3.via.delivery_app.grpc.packet;
 
-import sep4.via.delivery_app.Grpc;
+import sep3.via.delivery_app.Grpc;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 

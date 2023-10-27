@@ -1,4 +1,4 @@
-package sep4.via.delivery_app;
+package sep3.via.delivery_app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

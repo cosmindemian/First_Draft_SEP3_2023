@@ -1,10 +1,10 @@
-package sep4.via.delivery_app.grpc.packet;
+package sep3.via.delivery_app.grpc.packet;
 
 import lombok.RequiredArgsConstructor;
 import net.devh.boot.grpc.server.service.GrpcService;
-import sep4.via.delivery_app.Grpc;
-import sep4.via.delivery_app.model.Package;
-import sep4.via.delivery_app.repositories.PackageRepo;
+import sep3.via.delivery_app.Grpc;
+import sep3.via.delivery_app.model.Package;
+import sep3.via.delivery_app.repositories.PackageRepo;
 
 @RequiredArgsConstructor
 @GrpcService

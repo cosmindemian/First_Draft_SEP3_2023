@@ -1,4 +1,4 @@
-package sep4.via.delivery_app.model;
+package sep3.via.delivery_app.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;

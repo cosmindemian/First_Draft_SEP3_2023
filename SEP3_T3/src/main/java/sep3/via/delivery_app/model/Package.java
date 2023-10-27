@@ -1,9 +1,9 @@
-package sep4.via.delivery_app.model;
+package sep3.via.delivery_app.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import sep4.via.delivery_app.model.location.Address;
+import sep3.via.delivery_app.model.location.Address;
 
 @Entity
 @Getter
