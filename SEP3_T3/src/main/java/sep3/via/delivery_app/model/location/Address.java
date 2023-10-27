@@ -3,6 +3,7 @@ package sep3.via.delivery_app.model.location;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import sep3.via.delivery_app.model.Customer;
 import sep3.via.delivery_app.model.PickupPoint;
 
 @Entity
