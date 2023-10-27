@@ -42,14 +42,14 @@ public static partial class Package
   }
 
   static readonly grpc::Marshaller<global::PackageRequest> __Marshaller_PackageRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PackageRequest.Parser));
-  static readonly grpc::Marshaller<global::PackageResponse> __Marshaller_PackageResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PackageResponse.Parser));
+  static readonly grpc::Marshaller<global::PackageGetDTO> __Marshaller_PackageGetDTO = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PackageGetDTO.Parser));
 
-  static readonly grpc::Method<global::PackageRequest, global::PackageResponse> __Method_getPackage = new grpc::Method<global::PackageRequest, global::PackageResponse>(
+  static readonly grpc::Method<global::PackageRequest, global::PackageGetDTO> __Method_getPackage = new grpc::Method<global::PackageRequest, global::PackageGetDTO>(
       grpc::MethodType.Unary,
       __ServiceName,
       "getPackage",
       __Marshaller_PackageRequest,
-      __Marshaller_PackageResponse);
+      __Marshaller_PackageGetDTO);
 
   /// <summary>Service descriptor</summary>
   public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -61,7 +61,7 @@ public static partial class Package
   [grpc::BindServiceMethod(typeof(Package), "BindService")]
   public abstract partial class PackageBase
   {
-    public virtual global::System.Threading.Tasks.Task<global::PackageResponse> getPackage(global::PackageRequest request, grpc::ServerCallContext context)
+    public virtual global::System.Threading.Tasks.Task<global::PackageGetDTO> getPackage(global::PackageRequest request, grpc::ServerCallContext context)
     {
       throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
     }
@@ -91,19 +91,19 @@ public static partial class Package
     {
     }
 
-    public virtual global::PackageResponse getPackage(global::PackageRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    public virtual global::PackageGetDTO getPackage(global::PackageRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
     {
       return getPackage(request, new grpc::CallOptions(headers, deadline, cancellationToken));
     }
-    public virtual global::PackageResponse getPackage(global::PackageRequest request, grpc::CallOptions options)
+    public virtual global::PackageGetDTO getPackage(global::PackageRequest request, grpc::CallOptions options)
     {
       return CallInvoker.BlockingUnaryCall(__Method_getPackage, null, options, request);
     }
-    public virtual grpc::AsyncUnaryCall<global::PackageResponse> getPackageAsync(global::PackageRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    public virtual grpc::AsyncUnaryCall<global::PackageGetDTO> getPackageAsync(global::PackageRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
     {
       return getPackageAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
     }
-    public virtual grpc::AsyncUnaryCall<global::PackageResponse> getPackageAsync(global::PackageRequest request, grpc::CallOptions options)
+    public virtual grpc::AsyncUnaryCall<global::PackageGetDTO> getPackageAsync(global::PackageRequest request, grpc::CallOptions options)
     {
       return CallInvoker.AsyncUnaryCall(__Method_getPackage, null, options, request);
     }
@@ -128,7 +128,7 @@ public static partial class Package
   /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
   public static void BindService(grpc::ServiceBinderBase serviceBinder, PackageBase serviceImpl)
   {
-    serviceBinder.AddMethod(__Method_getPackage, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PackageRequest, global::PackageResponse>(serviceImpl.getPackage));
+    serviceBinder.AddMethod(__Method_getPackage, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PackageRequest, global::PackageGetDTO>(serviceImpl.getPackage));
   }
 
 }

@@ -1228,24 +1228,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\janme\\.nuget\\packages\\": {}
+    "C:\\Users\\START\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\janme\\RiderProjects\\ProofOfConcept\\SEP_T2\\ProofOfConcept\\ProofOfConcept.csproj",
+      "projectUniqueName": "C:\\Users\\START\\SEP3_2023\\SEP_T2\\ProofOfConcept\\ProofOfConcept.csproj",
       "projectName": "ProofOfConcept",
-      "projectPath": "C:\\Users\\janme\\RiderProjects\\ProofOfConcept\\SEP_T2\\ProofOfConcept\\ProofOfConcept.csproj",
-      "packagesPath": "C:\\Users\\janme\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\janme\\RiderProjects\\ProofOfConcept\\SEP_T2\\ProofOfConcept\\obj\\",
+      "projectPath": "C:\\Users\\START\\SEP3_2023\\SEP_T2\\ProofOfConcept\\ProofOfConcept.csproj",
+      "packagesPath": "C:\\Users\\START\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\START\\SEP3_2023\\SEP_T2\\ProofOfConcept\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\janme\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\START\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1308,7 +1315,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

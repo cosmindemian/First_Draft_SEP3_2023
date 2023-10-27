@@ -23,14 +23,19 @@ public static partial class GrpcReflection {
     byte[] descriptorData = global::System.Convert.FromBase64String(
         string.Concat(
           "ChFQcm90b3MvZ3JwYy5wcm90byIcCg5QYWNrYWdlUmVxdWVzdBIKCgJpZBgB",
-          "IAEoAyIiCg9QYWNrYWdlUmVzcG9uc2USDwoHbWVzc2FnZRgBIAEoCTI6CgdQ",
-          "YWNrYWdlEi8KCmdldFBhY2thZ2USDy5QYWNrYWdlUmVxdWVzdBoQLlBhY2th",
-          "Z2VSZXNwb25zZWIGcHJvdG8z"));
+          "IAEoAyKgAQoNUGFja2FnZUdldERUTxIQCghzZW5kZXJJZBgBIAEoAxIOCgZ3",
+          "ZWlnaHQYAiABKAESCgoCaWQYAyABKAMSDgoGc3RhdHVzGAQgASgJEhIKCnNl",
+          "bmRlck5hbWUYBSABKAkSFAoMcmVjZWl2ZXJOYW1lGAYgASgJEicKD3JlY2Vp",
+          "dmVyQWRkcmVzcxgHIAEoCzIOLkFkZHJlc3NHZXREVE8iSgoNQWRkcmVzc0dl",
+          "dERUTxIKCgJpZBgBIAEoAxIOCgZzdHJlZXQYAiABKAkSDAoEY2l0eRgDIAEo",
+          "CRIPCgd6aXBDb2RlGAUgASgJMjgKB1BhY2thZ2USLQoKZ2V0UGFja2FnZRIP",
+          "LlBhY2thZ2VSZXF1ZXN0Gg4uUGFja2FnZUdldERUT2IGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
           new pbr::GeneratedClrTypeInfo(typeof(global::PackageRequest), global::PackageRequest.Parser, new[]{ "Id" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::PackageResponse), global::PackageResponse.Parser, new[]{ "Message" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::PackageGetDTO), global::PackageGetDTO.Parser, new[]{ "SenderId", "Weight", "Id", "Status", "SenderName", "ReceiverName", "ReceiverAddress" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::AddressGetDTO), global::AddressGetDTO.Parser, new[]{ "Id", "Street", "City", "ZipCode" }, null, null, null, null)
         }));
   }
   #endregion
@@ -209,15 +214,15 @@ public sealed partial class PackageRequest : pb::IMessage<PackageRequest>
 
 }
 
-public sealed partial class PackageResponse : pb::IMessage<PackageResponse>
+public sealed partial class PackageGetDTO : pb::IMessage<PackageGetDTO>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
 #endif
 {
-  private static readonly pb::MessageParser<PackageResponse> _parser = new pb::MessageParser<PackageResponse>(() => new PackageResponse());
+  private static readonly pb::MessageParser<PackageGetDTO> _parser = new pb::MessageParser<PackageGetDTO>(() => new PackageGetDTO());
   private pb::UnknownFieldSet _unknownFields;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<PackageResponse> Parser { get { return _parser; } }
+  public static pb::MessageParser<PackageGetDTO> Parser { get { return _parser; } }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
@@ -230,55 +235,139 @@ public sealed partial class PackageResponse : pb::IMessage<PackageResponse>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public PackageResponse() {
+  public PackageGetDTO() {
     OnConstruction();
   }
 
   partial void OnConstruction();
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public PackageResponse(PackageResponse other) : this() {
-    message_ = other.message_;
+  public PackageGetDTO(PackageGetDTO other) : this() {
+    senderId_ = other.senderId_;
+    weight_ = other.weight_;
+    id_ = other.id_;
+    status_ = other.status_;
+    senderName_ = other.senderName_;
+    receiverName_ = other.receiverName_;
+    receiverAddress_ = other.receiverAddress_ != null ? other.receiverAddress_.Clone() : null;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public PackageResponse Clone() {
-    return new PackageResponse(this);
+  public PackageGetDTO Clone() {
+    return new PackageGetDTO(this);
   }
 
-  /// <summary>Field number for the "message" field.</summary>
-  public const int MessageFieldNumber = 1;
-  private string message_ = "";
+  /// <summary>Field number for the "senderId" field.</summary>
+  public const int SenderIdFieldNumber = 1;
+  private long senderId_;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string Message {
-    get { return message_; }
+  public long SenderId {
+    get { return senderId_; }
     set {
-      message_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      senderId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "weight" field.</summary>
+  public const int WeightFieldNumber = 2;
+  private double weight_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public double Weight {
+    get { return weight_; }
+    set {
+      weight_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "id" field.</summary>
+  public const int IdFieldNumber = 3;
+  private long id_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long Id {
+    get { return id_; }
+    set {
+      id_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "status" field.</summary>
+  public const int StatusFieldNumber = 4;
+  private string status_ = "";
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Status {
+    get { return status_; }
+    set {
+      status_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "senderName" field.</summary>
+  public const int SenderNameFieldNumber = 5;
+  private string senderName_ = "";
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string SenderName {
+    get { return senderName_; }
+    set {
+      senderName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "receiverName" field.</summary>
+  public const int ReceiverNameFieldNumber = 6;
+  private string receiverName_ = "";
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string ReceiverName {
+    get { return receiverName_; }
+    set {
+      receiverName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "receiverAddress" field.</summary>
+  public const int ReceiverAddressFieldNumber = 7;
+  private global::AddressGetDTO receiverAddress_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public global::AddressGetDTO ReceiverAddress {
+    get { return receiverAddress_; }
+    set {
+      receiverAddress_ = value;
     }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
-    return Equals(other as PackageResponse);
+    return Equals(other as PackageGetDTO);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(PackageResponse other) {
+  public bool Equals(PackageGetDTO other) {
     if (ReferenceEquals(other, null)) {
       return false;
     }
     if (ReferenceEquals(other, this)) {
       return true;
     }
-    if (Message != other.Message) return false;
+    if (SenderId != other.SenderId) return false;
+    if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Weight, other.Weight)) return false;
+    if (Id != other.Id) return false;
+    if (Status != other.Status) return false;
+    if (SenderName != other.SenderName) return false;
+    if (ReceiverName != other.ReceiverName) return false;
+    if (!object.Equals(ReceiverAddress, other.ReceiverAddress)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override int GetHashCode() {
     int hash = 1;
-    if (Message.Length != 0) hash ^= Message.GetHashCode();
+    if (SenderId != 0L) hash ^= SenderId.GetHashCode();
+    if (Weight != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Weight);
+    if (Id != 0L) hash ^= Id.GetHashCode();
+    if (Status.Length != 0) hash ^= Status.GetHashCode();
+    if (SenderName.Length != 0) hash ^= SenderName.GetHashCode();
+    if (ReceiverName.Length != 0) hash ^= ReceiverName.GetHashCode();
+    if (receiverAddress_ != null) hash ^= ReceiverAddress.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -295,9 +384,33 @@ public sealed partial class PackageResponse : pb::IMessage<PackageResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     output.WriteRawMessage(this);
   #else
-    if (Message.Length != 0) {
-      output.WriteRawTag(10);
-      output.WriteString(Message);
+    if (SenderId != 0L) {
+      output.WriteRawTag(8);
+      output.WriteInt64(SenderId);
+    }
+    if (Weight != 0D) {
+      output.WriteRawTag(17);
+      output.WriteDouble(Weight);
+    }
+    if (Id != 0L) {
+      output.WriteRawTag(24);
+      output.WriteInt64(Id);
+    }
+    if (Status.Length != 0) {
+      output.WriteRawTag(34);
+      output.WriteString(Status);
+    }
+    if (SenderName.Length != 0) {
+      output.WriteRawTag(42);
+      output.WriteString(SenderName);
+    }
+    if (ReceiverName.Length != 0) {
+      output.WriteRawTag(50);
+      output.WriteString(ReceiverName);
+    }
+    if (receiverAddress_ != null) {
+      output.WriteRawTag(58);
+      output.WriteMessage(ReceiverAddress);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -308,9 +421,33 @@ public sealed partial class PackageResponse : pb::IMessage<PackageResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-    if (Message.Length != 0) {
-      output.WriteRawTag(10);
-      output.WriteString(Message);
+    if (SenderId != 0L) {
+      output.WriteRawTag(8);
+      output.WriteInt64(SenderId);
+    }
+    if (Weight != 0D) {
+      output.WriteRawTag(17);
+      output.WriteDouble(Weight);
+    }
+    if (Id != 0L) {
+      output.WriteRawTag(24);
+      output.WriteInt64(Id);
+    }
+    if (Status.Length != 0) {
+      output.WriteRawTag(34);
+      output.WriteString(Status);
+    }
+    if (SenderName.Length != 0) {
+      output.WriteRawTag(42);
+      output.WriteString(SenderName);
+    }
+    if (ReceiverName.Length != 0) {
+      output.WriteRawTag(50);
+      output.WriteString(ReceiverName);
+    }
+    if (receiverAddress_ != null) {
+      output.WriteRawTag(58);
+      output.WriteMessage(ReceiverAddress);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
@@ -321,8 +458,26 @@ public sealed partial class PackageResponse : pb::IMessage<PackageResponse>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int CalculateSize() {
     int size = 0;
-    if (Message.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(Message);
+    if (SenderId != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(SenderId);
+    }
+    if (Weight != 0D) {
+      size += 1 + 8;
+    }
+    if (Id != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(Id);
+    }
+    if (Status.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Status);
+    }
+    if (SenderName.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(SenderName);
+    }
+    if (ReceiverName.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(ReceiverName);
+    }
+    if (receiverAddress_ != null) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReceiverAddress);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -331,12 +486,33 @@ public sealed partial class PackageResponse : pb::IMessage<PackageResponse>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(PackageResponse other) {
+  public void MergeFrom(PackageGetDTO other) {
     if (other == null) {
       return;
     }
-    if (other.Message.Length != 0) {
-      Message = other.Message;
+    if (other.SenderId != 0L) {
+      SenderId = other.SenderId;
+    }
+    if (other.Weight != 0D) {
+      Weight = other.Weight;
+    }
+    if (other.Id != 0L) {
+      Id = other.Id;
+    }
+    if (other.Status.Length != 0) {
+      Status = other.Status;
+    }
+    if (other.SenderName.Length != 0) {
+      SenderName = other.SenderName;
+    }
+    if (other.ReceiverName.Length != 0) {
+      ReceiverName = other.ReceiverName;
+    }
+    if (other.receiverAddress_ != null) {
+      if (receiverAddress_ == null) {
+        ReceiverAddress = new global::AddressGetDTO();
+      }
+      ReceiverAddress.MergeFrom(other.ReceiverAddress);
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -352,8 +528,35 @@ public sealed partial class PackageResponse : pb::IMessage<PackageResponse>
         default:
           _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
           break;
-        case 10: {
-          Message = input.ReadString();
+        case 8: {
+          SenderId = input.ReadInt64();
+          break;
+        }
+        case 17: {
+          Weight = input.ReadDouble();
+          break;
+        }
+        case 24: {
+          Id = input.ReadInt64();
+          break;
+        }
+        case 34: {
+          Status = input.ReadString();
+          break;
+        }
+        case 42: {
+          SenderName = input.ReadString();
+          break;
+        }
+        case 50: {
+          ReceiverName = input.ReadString();
+          break;
+        }
+        case 58: {
+          if (receiverAddress_ == null) {
+            ReceiverAddress = new global::AddressGetDTO();
+          }
+          input.ReadMessage(ReceiverAddress);
           break;
         }
       }
@@ -370,8 +573,315 @@ public sealed partial class PackageResponse : pb::IMessage<PackageResponse>
         default:
           _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
           break;
-        case 10: {
-          Message = input.ReadString();
+        case 8: {
+          SenderId = input.ReadInt64();
+          break;
+        }
+        case 17: {
+          Weight = input.ReadDouble();
+          break;
+        }
+        case 24: {
+          Id = input.ReadInt64();
+          break;
+        }
+        case 34: {
+          Status = input.ReadString();
+          break;
+        }
+        case 42: {
+          SenderName = input.ReadString();
+          break;
+        }
+        case 50: {
+          ReceiverName = input.ReadString();
+          break;
+        }
+        case 58: {
+          if (receiverAddress_ == null) {
+            ReceiverAddress = new global::AddressGetDTO();
+          }
+          input.ReadMessage(ReceiverAddress);
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+public sealed partial class AddressGetDTO : pb::IMessage<AddressGetDTO>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<AddressGetDTO> _parser = new pb::MessageParser<AddressGetDTO>(() => new AddressGetDTO());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<AddressGetDTO> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GrpcReflection.Descriptor.MessageTypes[2]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public AddressGetDTO() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public AddressGetDTO(AddressGetDTO other) : this() {
+    id_ = other.id_;
+    street_ = other.street_;
+    city_ = other.city_;
+    zipCode_ = other.zipCode_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public AddressGetDTO Clone() {
+    return new AddressGetDTO(this);
+  }
+
+  /// <summary>Field number for the "id" field.</summary>
+  public const int IdFieldNumber = 1;
+  private long id_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long Id {
+    get { return id_; }
+    set {
+      id_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "street" field.</summary>
+  public const int StreetFieldNumber = 2;
+  private string street_ = "";
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Street {
+    get { return street_; }
+    set {
+      street_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "city" field.</summary>
+  public const int CityFieldNumber = 3;
+  private string city_ = "";
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string City {
+    get { return city_; }
+    set {
+      city_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "zipCode" field.</summary>
+  public const int ZipCodeFieldNumber = 5;
+  private string zipCode_ = "";
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string ZipCode {
+    get { return zipCode_; }
+    set {
+      zipCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as AddressGetDTO);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(AddressGetDTO other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (Id != other.Id) return false;
+    if (Street != other.Street) return false;
+    if (City != other.City) return false;
+    if (ZipCode != other.ZipCode) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (Id != 0L) hash ^= Id.GetHashCode();
+    if (Street.Length != 0) hash ^= Street.GetHashCode();
+    if (City.Length != 0) hash ^= City.GetHashCode();
+    if (ZipCode.Length != 0) hash ^= ZipCode.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (Id != 0L) {
+      output.WriteRawTag(8);
+      output.WriteInt64(Id);
+    }
+    if (Street.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(Street);
+    }
+    if (City.Length != 0) {
+      output.WriteRawTag(26);
+      output.WriteString(City);
+    }
+    if (ZipCode.Length != 0) {
+      output.WriteRawTag(42);
+      output.WriteString(ZipCode);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (Id != 0L) {
+      output.WriteRawTag(8);
+      output.WriteInt64(Id);
+    }
+    if (Street.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(Street);
+    }
+    if (City.Length != 0) {
+      output.WriteRawTag(26);
+      output.WriteString(City);
+    }
+    if (ZipCode.Length != 0) {
+      output.WriteRawTag(42);
+      output.WriteString(ZipCode);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (Id != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(Id);
+    }
+    if (Street.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Street);
+    }
+    if (City.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(City);
+    }
+    if (ZipCode.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(ZipCode);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(AddressGetDTO other) {
+    if (other == null) {
+      return;
+    }
+    if (other.Id != 0L) {
+      Id = other.Id;
+    }
+    if (other.Street.Length != 0) {
+      Street = other.Street;
+    }
+    if (other.City.Length != 0) {
+      City = other.City;
+    }
+    if (other.ZipCode.Length != 0) {
+      ZipCode = other.ZipCode;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          Id = input.ReadInt64();
+          break;
+        }
+        case 18: {
+          Street = input.ReadString();
+          break;
+        }
+        case 26: {
+          City = input.ReadString();
+          break;
+        }
+        case 42: {
+          ZipCode = input.ReadString();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          Id = input.ReadInt64();
+          break;
+        }
+        case 18: {
+          Street = input.ReadString();
+          break;
+        }
+        case 26: {
+          City = input.ReadString();
+          break;
+        }
+        case 42: {
+          ZipCode = input.ReadString();
           break;
         }
       }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9ZO+zrKz33vOUtkenT5u6/GyVVXdh9GnZTVCHbhY5HkHofGOysnBekt1LtIR9NwQ1FMq111RTSj+8sh3z+1kXA==",
+  "dgSpecHash": "Uop+F9By+gGQg5PHH2rvEz0zQSXEKKImRJmS/8yMlxlV+BOLq5qW90LTwbJdPEOzKg0C5pD7zS4RmEhqXsHWwg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\START\\RiderProjects\\SEP3_2023\\SEP3_T1\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\START\\SEP3_2023\\SEP3_T1\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

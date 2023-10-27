@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 service Package {
-  rpc getPackage (PackageRequest) returns (PackageResponse);
+  rpc getPackage (PackageRequest) returns (PackageGetDTO);
 }
 
 
@@ -9,6 +9,20 @@ message PackageRequest {
   int64 id = 1;
 }
 
-message PackageResponse {
-  string message = 1;
+message PackageGetDTO{
+  int64  senderId = 1;
+  double weight = 2;
+  int64 id = 3;
+  string status = 4;
+  string senderName = 5;
+  string receiverName = 6;
+  AddressGetDTO receiverAddress = 7;
+
+}
+
+message AddressGetDTO{
+  int64 id = 1;
+  string street = 2;
+  string city = 3;
+  string zipCode = 5;
 }
